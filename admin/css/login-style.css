@@ -1,0 +1,118 @@
+/*Background Image of Admin's Login Page*/
+
+
+#cover {
+    background-image: url(../img/bg-img.jpg);
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+
+.dash-leftbar {
+    margin-top: 1px;
+    width: 15%;
+    height: calc(100vh);
+    position: fixed;
+    background: #343A40;
+}
+
+.myHd {
+    color: dimgrey;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.side-label {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.side-label:hover {
+    color: white;
+}
+
+.side-divider {
+    margin-top: 2px;
+    border-top: 1px solid #bbb;
+}
+
+.page-title {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.panel {
+    overflow: hidden;
+}
+
+.hr-dashed {
+    background-color: transparent;
+    border-top: 1px dotted #abadb3;
+    color: transparent;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.ts-main-content .content-wrapper {
+    padding-top: 2%;
+    margin-top: -50%;
+}
+
+@media only screen and (min-width: 100vh) {
+    .ts-main-content .content-wrapper {
+        margin-left: 10%;
+    }
+}
+
+.adSt {
+    color: red;
+    font-weight: bold;
+}
+
+.errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+.succWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.card {
+  overflow: hidden;
+}

@@ -1,0 +1,274 @@
+/*Header Starts*/
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.myHeader {
+    background: #1da1f2;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.myHeader .menu-btn {
+    float: right;
+    background: #1da1f2;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .myHeader .menu-btn {
+        display: none;
+    }
+}
+
+.myHeader .profile {
+    float: right;
+    display: none;
+}
+
+.myHeader .profile li {
+    float: left;
+    position: relative;
+}
+
+.myHeader .profile li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+}
+
+.myHeader .profile li ul {
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    position: absolute;
+}
+
+.myHeader .profile li ul li {
+    float: none;
+    width: 180px;
+}
+
+.myHeader .profile li ul li a {
+    padding: 10px 20px;
+    background: #0886d4;
+}
+
+.myHeader .profile .account .fa-angle-down {
+    float: right;
+}
+
+.myHeader .profile .account > a {
+    width: 180px;
+    background: #0886d4;
+}
+
+.myHeader .profile .account .account-logo {
+    border-radius: 50%;
+    height: 30px;
+    margin: -10px 0;
+    margin-right: 10px;
+}
+
+.myHeader .profile .account:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+    .myHeader .profile {
+        display: block;
+    }
+}
+
+/*Header Ends*/
+
+/*Dashboard Starts*/
+.main-content .content-wrapper {
+    padding-top: 15px;
+    margin-top: 60px;
+}
+
+@media only screen and (min-width: 992px) {
+    .main-content .sidebar {
+        width: 250px;
+        float: left;
+    }
+
+    .main-content .content-wrapper {
+        margin-left: 250px;
+    }
+}
+
+/*Dashboard Ends*/
+
+/*Leftbar Starts*/
+.sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #b4b4b4;
+}
+
+.sidebar {
+    background: #0886d4;
+    max-height: 0;
+    transition: max-height 0.3s;
+    overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    top: 60px;
+    overflow-y: auto;
+}
+
+.sidebar .hidden-side {
+    display: none;
+}
+
+.sidebar .sidebar-search {
+    width: 100%;
+    background: #25292a;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+    .sidebar .ts-profile-nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .sidebar {
+        max-height: 100%;
+        bottom: 0;
+    }
+}
+
+.sidebar-menu .sidebar-label {
+    color: #e3dada;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 15px;
+    color: #fff;
+}
+
+.sidebar-menu li {
+    position: relative;
+}
+
+.sidebar-menu li i {
+    color: #585c64;
+    margin-right: 10px;
+}
+
+.sidebar-menu li ul {
+    display: block;
+    background: rgba(255, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.32);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-open,
+.sidebar-menu .open > ul {
+    max-height: 2000px;
+}
+
+.sidebar-menu .open > a {
+    background: rgba(51, 56, 62, 0.35);
+}
+
+.sidebar-menu > .open > a {
+    background: #1da1f2;
+    border-left: 3px solid #ed0c97;
+}
+
+.sidebar-menu .open > .more i {
+    transform: rotate(180deg);
+}
+
+.more i {
+    color: #fff;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.more {
+    float: right;
+    min-width: 10%;
+    cursor: pointer;
+}
+
+/*Leftbar Ends*/
+/*Change Password Starts*/
+.errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+.succWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.page-title {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.hr-dashed {
+  background-color: transparent;
+  border-top: 1px dotted #edf0f5;
+  color: transparent;
+  height: 1px;
+  margin: 20px 0;
+}
+/*Change Password Ends*/
+
+.block-anchor {
+  display: block;
+}
